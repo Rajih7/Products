@@ -31,11 +31,7 @@ function App() {
       <div className="App">
         <Router>
           <Routes>
-            <Route
-              path="/"
-              element={<Navigate to="/SignIn" />}
-            />
-            <Route path="/SignIn" element={<SignIn />} />
+            <Route path="/" element={<SignIn />} />
             <Route path="/SignUp" element={<SignUp />} />
             <Route
               path="/counter"

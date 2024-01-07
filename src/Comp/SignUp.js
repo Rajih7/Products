@@ -98,7 +98,7 @@ const SignUp = () => {
         </button>
         <p className="mt-4 text-sm">
           Already have an account?{" "}
-          <Link to="/SignIn" className="text-blue-500">
+          <Link to="/" className="text-blue-500">
             Sign In
           </Link>
         </p>

@@ -15,7 +15,7 @@ const Header = ({ user }) => {
         </div>
           <div className="flex items-center">
             <p className="text-sm mr-4">Welcome, <b>{user.displayName}</b>!</p>
-            <Link to="/Product" className="hover:text-red-500">
+            <Link to="/" className="hover:text-red-500">
               Signout
             </Link>
           </div>
