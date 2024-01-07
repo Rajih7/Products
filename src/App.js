@@ -32,7 +32,7 @@ function App() {
         <Router>
           <Routes>
             <Route
-              path="/Product"
+              path="/"
               element={<Navigate to="/SignIn" />}
             />
             <Route path="/SignIn" element={<SignIn />} />
