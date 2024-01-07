@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -35,12 +34,7 @@ const Counter = () => {
   };
 
   return (
-    <div className="container mx-auto mt-10 text-center">
-      <Link to="/Product">
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Back
-        </button>
-      </Link>
+    <div className="container mx-auto mt-10 text-center h-screen">
       <h1 className="text-4xl font-bold mb-4">{count}</h1>
       <div className="space-x-4 text-white">
         <button

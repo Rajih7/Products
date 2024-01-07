@@ -30,22 +30,10 @@ function ProductsList() {
     setProductsPerPage(selectedValue);
     setCurrentPage(1);
   };
-
-  const getProductLink = (productId) => `/product/${productId}`;
+  const getProductLink = (productId) => `/Product/${productId}`;
 
   return (
     <div className="container">
-      <div className="w-screen h-20 bg-slate-500 flex justify-between items-center px-8">
-        <h1 className="text-6xl font-extrabold leading-none tracking-tight text-white">
-          Products
-        </h1>
-        <Link to="/counter">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Counter
-          </button>
-        </Link>
-      </div>
-
       <div className="grid grid-cols-4 gap-4 mt-3 p-5">
         {currentProducts.map((product) => (
           <Link to={getProductLink(product.id)} key={product.id}>
