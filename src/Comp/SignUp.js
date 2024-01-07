@@ -36,7 +36,7 @@ const SignUp = () => {
       const user = response.user;
       await updateProfile(user, { displayName });
       dispatch(setUser(user));
-      navigate("/SignIn");
+      navigate("/");
     } catch (error) {
       console.log(error.code)
       if (error.code === "auth/email-already-in-use") {
